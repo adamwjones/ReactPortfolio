@@ -31,7 +31,7 @@
     border-radius: 0;
 }
 
-.fa {
+.upArrow {
     background-color: black;
     float: right;
     position: fixed;
@@ -48,7 +48,7 @@
     border: 4px black solid;
 }
 
-.fa:hover {
+.upArrow:hover {
     background-color: white;
     color: black;
 }

@@ -44,10 +44,10 @@ function Footer() {
 
     return (
     <footer className='footer'>
-        <i variant="info" onClick={topFunction} className="fa fa-long-arrow-up" id="scrollBTN " title="Go to top"></i>
+        <i variant="info" onClick={topFunction} className="upArrow fa fa-long-arrow-up" id="scrollBTN " title="Go to top"></i>
         <div className="blackLogo">
-        <a href="https://www.linkedin.com/in/brian-gearty-2a434a76/"><img src="../assets/linkedinlogo.svg" alt="Linkedin logo" className="linkedin aTag" ></img></a>
-        <a href="https://github.com/BrianGearty"><img src="../assets/githublogo.svg" alt="Github logo" className="Github aTag" ></img></a>
+        <a href="https://www.linkedin.com/in/adam-w-jones-6403bb3a/"><img src="../assets/linkedinlogo.svg" alt="Linkedin logo" className="linkedin aTag" ></img></a>
+        <a href="https://github.com/adamwjones"><img src="../assets/githublogo.svg" alt="Github logo" className="Github aTag" ></img></a>
         </div>    
     </footer>
     );

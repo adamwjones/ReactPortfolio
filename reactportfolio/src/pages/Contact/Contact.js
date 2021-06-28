@@ -6,11 +6,11 @@ import "../Contact/Contact.css";
 function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_gsubq8v', e.target, 'user_pqHnzMPwJyjHNYwuZgwiR')
+    emailjs.sendForm('gmail', 'service_4jsayuc', e.target, 'user_URkQCralpxaHpUOqJNIkP')
         .then((result) => {
             if(result.text === ""){
                 (alert("You cant send me an empty message!!"))
-            }
+            } 
         }, (error) => {
             console.log(error.text);
         });
