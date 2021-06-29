@@ -1,10 +1,14 @@
 import React from "react";
 import { Container, Row } from "../../components/Grid/index";
 import { SRLWrapper } from "simple-react-lightbox";
-
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
+import LazyLoad from 'react-lazyload';
 
 
 const Gallery = () => {
+    const flipAnimation = keyframes`${fadeIn}`;
+    const Flip = styled.div `animation: 1s ${flipAnimation};`;
 
     const options = {
         settings: {
@@ -25,12 +29,14 @@ const Gallery = () => {
 
 
     return (
-        <div>
+        
+        <Flip><div>
             <section className="gallery py-5">
                 <Container fluid>
                     <div className="section-heading text-center">
                         <h1 className="heading-title">Experience</h1>
                     </div>
+                    
                     <SRLWrapper options={options}>
                         <Row>
                             <div className="lightbox-content col-12 col-sm-6 col-md-4">
@@ -93,78 +99,8 @@ const Gallery = () => {
                     </SRLWrapper>
                 </Container>
             </section>
-
-            {/* <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton></Modal.Header>
-        <Modal.Body >
-            <Carousel activeIndex={index} onSelect={handleSelect} >
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="../assets/img-1.jpg"
-                        alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="../assets/img-2.jpg"
-                        alt="Second slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="../assets/img-3.jpg"
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="../assets/img-4.jpg"
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="../assets/img-5.jpg"
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="../assets/img-6.jpg"
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="../assets/img-7.jpg"
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="../assets/img-8.jpg"
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="../assets/img-9.jpg"
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-            </Carousel>
-        </Modal.Body>
-    </Modal> */}
-        </div>
+        </div></Flip>
+        
 
 
     )
