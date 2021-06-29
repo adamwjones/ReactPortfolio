@@ -6,7 +6,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import "../Resume/Resume.css"
 // import Loading from "../../components/Loading/loading";
 
-import { Document, Page, Outline} from 'react-pdf/dist/esm/entry.webpack';
+import { Document, Page} from 'react-pdf/dist/esm/entry.webpack';
 
 
 
