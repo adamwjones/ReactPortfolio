@@ -23,7 +23,7 @@ const Resume = () => {
     const Flip = styled.div `animation: 1s ${flipAnimation};`;
     return (
         <div className="resumePage ">
-            <Container fluid className="resume text-center">
+            <Container fluid className="resume">
                 
             <Col size="-12">
             <Document
