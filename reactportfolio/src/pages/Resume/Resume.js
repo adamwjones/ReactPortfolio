@@ -22,8 +22,8 @@ const Resume = () => {
     const flipAnimation = keyframes`${fadeIn}`;
     const Flip = styled.div `animation: 1s ${flipAnimation};`;
     return (
-        <div className="resumePage">
-            <Container fluid className="resume">
+        <div className="resumePage ">
+            <Container fluid className="resume text-center">
                 
             <Col size="-12">
             <Document
